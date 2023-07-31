@@ -1,10 +1,13 @@
 const hre = require("hardhat");
-const verify = require("@nomiclabs/hardhat-etherscan");
 
 async function main() {
 
-  const Whitelist = await hre.ethers.getContractFactory("Whitelist");
-  const contract = await Whitelist.deploy();
+  const EyesNFT = await hre.ethers.getContractFactory("EyesNFT");
+  const contract = await EyesNFT.deploy(
+    "Eyes of the Departed",
+    "EYE",
+    "ipfs://Qmd6yr5rFDcMJP1tscp15xzaea7ALEJkJuJLk7h4ax1U4y/"
+  );
 
   await contract.deployed();
 
