@@ -1,4 +1,4 @@
-# nft-whitelist-hardhat
+# hardhat-deploy-project
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
